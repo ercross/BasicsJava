@@ -1,0 +1,9 @@
+Leetcode.com
+
+Problem statment: You're given two non-empty linked list representing two non-negative integers. The digits are stored in reverse order and each of their nodes contains a single digit. Add the two numbers and return it as a linked list.
+
+You may assume the two numbers do not contain any leading zero, except the number zero itself. Example: Input: (2->4->3) + (5->6->4) Output: 7->0->8
+
+Explanation: 342 + 465 = 807
+
+Solution statement: I implemented a SinglyLinkedList ADT where an instance of it contains one or more instance of the ListNode (ListNode.java) The main solution to the problem is contained in addTwoNumbers(). Rather than begin addition from the last nodes of each list, as it is done with normal addition, summing of two integers, one each from both list's getNode(i), starts from the headNode of each list and traverse down to the tailNode.
